@@ -21,7 +21,7 @@
         {{ item.price }}.00 TZS
       </p>
       <p>
-        <a href="{% url 'menu-item' %}">Read More</a>
+        <a href="{% url 'menu_item' pk=item.pk %}">Read More</a>
       </p>
     </article>
     {% endfor %}
