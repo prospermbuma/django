@@ -3,11 +3,18 @@
 
 {% block content %}
 <h1>Menu Details</h1>
-<div class="row">
+<article>
+  <div class="row">
   <div class="column">
     <h2>{{ menu_item.name }}</h2>
     <p>{{ menu_item.description }}</p>
     <p>{{ menu_item.price }}.00 TZS</p>
   </div> 
-</div>  
+  <div class="column">
+    <figure class="figure">
+      <img src={{ menu_item.photo.url }}>
+    </figure>
+  </div>
+</div> 
+</article> 
 {% endblock %}
